@@ -35,7 +35,7 @@ function Contact() {
                     </button>
             </form>
             <div>
-                <img src="/assets/Contact.Svg" alt="" />
+                <img src="/assets/Contact.Svg" alt="image loading failed" />
             </div>
            </div>
         </div>
