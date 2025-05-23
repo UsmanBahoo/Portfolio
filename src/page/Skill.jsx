@@ -34,7 +34,7 @@ function Skill() {
                 key={title}
               >
                 <img
-                  src={`/src/assets/${src}`}
+                  src={`/assets/${src}`}
                   alt={title}
                   className="w-[80px] h-[80px]"
                 />
@@ -62,7 +62,7 @@ function Skill() {
                 key={title}
               >
                 <img
-                  src={`/src/assets/${src}`}
+                  src={`/assets/${src}`}
                   alt={title}
                   className="w-[80px] h-[80px]"
                 />
