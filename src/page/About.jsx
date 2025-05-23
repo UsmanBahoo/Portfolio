@@ -18,7 +18,7 @@ export default function About() {
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <div className='flex justify-center items-center md:flex-row flex-col'>
-                  <img src="\src\assets\responsive.Svg.gif" alt="" loading='lazy' className='w-[100px] h-[100px]' />
+                  <img src="\assets\responsive.Svg.gif" alt="" loading='lazy' className='w-[100px] h-[100px]' />
                   </div>
                   <p className='text-xl font-bold text-white text-centerc mt-10'>RESPONSIVE DESIGN</p>
                   
@@ -35,7 +35,7 @@ export default function About() {
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <div className='flex justify-center items-center'>
-                  <img src="\src\assets\react-23c4d31a.gif" alt="" loading='lazy' className='w-[100px] h-[100px]' />
+                  <img src="\assets\react-23c4d31a.gif" alt="" loading='lazy' className='w-[100px] h-[100px]' />
                   </div>
                   <p className='text-xl font-bold text-white text-center mt-10'>FRONT-END DEVELOPMENT</p>
                   
@@ -51,7 +51,7 @@ export default function About() {
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <div className='flex justify-center items-center'>
-                  <img src="\src\assets\fullstack-36c09759.gif" alt="" loading='lazy' className='w-[100px] h-[100px]' />
+                  <img src="\assets\fullstack-36c09759.gif" alt="" loading='lazy' className='w-[100px] h-[100px]' />
                   </div>
                   <p className='text-xl font-bold text-white text-center mt-10'>BACK-END DEVELOPMENT</p>
                   

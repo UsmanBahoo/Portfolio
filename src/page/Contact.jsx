@@ -35,7 +35,7 @@ function Contact() {
                     </button>
             </form>
             <div>
-                <img src="/src/assets/Contact.Svg" alt="" />
+                <img src="/assets/Contact.Svg" alt="" />
             </div>
            </div>
         </div>

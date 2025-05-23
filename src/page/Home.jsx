@@ -35,16 +35,16 @@ function Home() {
               <div className="flex mt-4 gap-2">
                 <em className="text-white text-xl mt-2 not-italic">Follow me</em>
                 <a href="https://github.com/UsmanBahoo">
-                  <img src="/src/assets/github-142-svgrepo-com.svg" alt="Github" className="mt-2 rounded-full h-6 w-6 bg-white" />
+                  <img src="/assets/github-142-svgrepo-com.svg" alt="Github" className="mt-2 rounded-full h-6 w-6 bg-white" />
                 </a>
                 <a href="https://www.linkedin.com/in/usman-bahoo-aa0926209/">
-                  <img src="/src/assets/linkedin-svgrepo-com.svg" alt="Linkedin" className="mt-2 rounded-full h-6 w-6 bg-white" />
+                  <img src="/assets/linkedin-svgrepo-com.svg" alt="Linkedin" className="mt-2 rounded-full h-6 w-6 bg-white" />
                 </a>
                 <a href="https://leetcode.com/">
-                  <img src="/src/assets/leetcode.svg" alt="Leetcode" className="mt-2 rounded-full h-6 w-6 bg-white" />
+                  <img src="/assets/leetcode.svg" alt="Leetcode" className="mt-2 rounded-full h-6 w-6 bg-white" />
                 </a>
                 <a href="https://www.codechef.com/dashboard">
-                  <img src="/src/assets/cc-logo.svg" alt="CodeChef" className="mt-2 rounded-full h-6 w-6 bg-white" />
+                  <img src="/assets/cc-logo.svg" alt="CodeChef" className="mt-2 rounded-full h-6 w-6 bg-white" />
                 </a>
               </div>
 
@@ -85,7 +85,7 @@ function Home() {
             {/* Right Side Image */}
             <div className="mt-20">
               <img
-                src="/src/assets/usman.jpg"
+                src="/assets/usman.jpg"
                 alt="Usman Bahoo"
                 className="rounded-full w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 object-cover"
               />
@@ -110,31 +110,31 @@ function Home() {
                 >
                     <SwiperSlide>
                     <div className="flex justify-center items-center ">
-                        <img src="/src/assets/MongoDB.svg" alt="MongoDB" className="w-[50px] h-[50px] " />
+                        <img src="/assets/MongoDB.svg" alt="MongoDB" className="w-[50px] h-[50px] " />
                     </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
                     <div className="flex justify-center items-center ">
-                        <img src="/src/assets/Express.svg" alt="Express" className="w-[50px] h-[50px]" />
+                        <img src="/assets/Express.svg" alt="Express" className="w-[50px] h-[50px]" />
                     </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
                     <div className="flex justify-center items-center ">
-                        <img src="/src/assets/React.Svg" alt="React" className="w-[50px] h-[50px]" />
+                        <img src="/assets/React.Svg" alt="React" className="w-[50px] h-[50px]" />
                     </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
                     <div className="flex justify-center items-center ">
-                        <img src="/src/assets/Next.svg" alt="Next.js" className="w-[50px] h-[50px]" />
+                        <img src="/assets/Next.svg" alt="Next.js" className="w-[50px] h-[50px]" />
                     </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
                     <div className="flex justify-center items-center ">
-                        <img src="/src/assets/Nodejs.Svg" alt="Node.js" className="w-[50px] h-[50px]" />
+                        <img src="/assets/Nodejs.Svg" alt="Node.js" className="w-[50px] h-[50px]" />
                     </div>
                     </SwiperSlide>
 
