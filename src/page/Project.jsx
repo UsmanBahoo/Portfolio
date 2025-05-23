@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Frontend Development',
     period: 'Jun 2022 - Present',
-    icon: '/assets/React.svg',
+    icon: '/assets/React.Svg',
     position: 'left',
     technologies: 'React.js, Redux, Formik with Yup',
     points: [
@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Backend Development',
     period: 'Jan 2021 - May 2022',
-    icon: '/assets/Nodejs.svg',
+    icon: '/assets/Nodejs.Svg',
     position: 'right',
     technologies: 'Node.js, Express, MongoDB',
     points: [
@@ -50,7 +50,7 @@ const projects = [
   {
     title: 'DevOps',
     period: 'Mar 2019 - Jul 2020',
-    icon: '/assets/Docker.svg',
+    icon: '/assets/Docker.Svg',
     position: 'right',
     technologies: 'Docker, Kubernetes, AWS',
     points: [
