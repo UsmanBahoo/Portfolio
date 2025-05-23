@@ -49,7 +49,7 @@ function Home() {
               </div>
 
               {/* Buttons */}
-              <div className="bg-gray-900 flex items-center mt-4 gap-2 overflow-x-auto">
+              <div className="bg-gray-900 flex items-center mt-4 gap-2 overflow-x-hidden overflow-y-hidden">
                 <a
                   href="mailto:usmanbahoo381@gmail.com"
                   className="rgb-button sm:text-base text-white text-center font-bold py-4 w-full rounded-full shadow-lg transform transition-transform duration-300"
