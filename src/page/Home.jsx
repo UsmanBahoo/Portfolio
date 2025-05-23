@@ -77,7 +77,7 @@ function Home() {
                     <div class="square"></div>
                   </span>
                   <p class="title">Resume</p>
-                  <a href='/src/assets/Usman Baho Mern Stack.pdf' class="title">Open</a>
+                  <a href='/assets/Usman Baho Mern Stack.pdf' class="title">Open</a>
                 </label>
               </div>
             </div>
