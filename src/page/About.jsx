@@ -57,7 +57,7 @@ export default function About() {
                   
                 </div>
                 <div class="flip-card-back">
-                  <p className='text-xl text-white text-center'>A powerful full-stack JavaScript framework combining MongoDB, Express.js, React.js, and Node.js.
+                  <p className='text-lg text-white text-center'>A powerful full-stack JavaScript framework combining MongoDB, Express.js, React.js, and Node.js.
                     It allows developers to build scalable, high-performance web applications using a unified language across the entire stack.
                     MERN streamlines development by offering an integrated ecosystem for both client-side and server-side programming.</p>
                 </div>
