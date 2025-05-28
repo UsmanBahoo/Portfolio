@@ -53,10 +53,7 @@ export default function About() {
                   <div className='flex justify-center items-center'>
                   <img src="\assets\fullstack-36c09759.gif" alt="" loading='lazy' className='w-[100px] h-[100px]' />
                   </div>
-                   <p className='text-xl font-bold text-white text-center mt-10 backdev-text'>
-                    <span className="back-part">BACK-END</span>{' '}
-                    <span className="dev-part">DEVELOPMENT</span>
-                  </p>
+                  <p className='text-xl font-bold text-white text-center mt-10 w-full'>BACK-END DEVELOPMENT</p>
                   
                 </div>
                 <div class="flip-card-back">
