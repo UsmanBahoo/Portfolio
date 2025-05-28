@@ -24,7 +24,7 @@ export default function About() {
                   
                 </div>
                 <div class="flip-card-back">
-                  <p className='text-xl text-white text-center'>An approach that makes websites visually appealing and functional across all devices — mobiles, tablets, and desktops.
+                  <p className='text-md text-white text-center'>An approach that makes websites visually appealing and functional across all devices — mobiles, tablets, and desktops.
                     It enhances user experience by adapting layout and content automatically.
                     Implemented using flexible grids, media queries, and scalable components</p>
                   
@@ -41,7 +41,7 @@ export default function About() {
                   
                 </div>
                 <div class="flip-card-back">
-                  <p className='text-xl text-white text-center'>It involves building dynamic and interactive user interfaces using React.js.
+                  <p className='text-md text-white text-center'>It involves building dynamic and interactive user interfaces using React.js.
                   React enables reusable components, efficient state management, and a virtual DOM for fast rendering.
                   The focus is on creating responsive, user-friendly, and performant web applications.</p>
                 </div>
@@ -57,7 +57,7 @@ export default function About() {
                   
                 </div>
                 <div class="flip-card-back">
-                  <p className='text-xl text-white text-center'>A powerful full-stack JavaScript framework combining MongoDB, Express.js, React.js, and Node.js.
+                  <p className='text-md text-white text-center'>A powerful full-stack JavaScript framework combining MongoDB, Express.js, React.js, and Node.js.
                     It allows developers to build scalable, high-performance web applications using a unified language across the entire stack.
                     MERN streamlines development by offering an integrated ecosystem for both client-side and server-side programming.</p>
                 </div>
