@@ -278,7 +278,20 @@
         margin-left: 0;
       }
     }
+   .backdev-text {
+  white-space: nowrap; /* Keep in one line by default */
+}
 
+/* When screen is 320px or smaller, stack the spans */
+@media (max-width: 320px) {
+  .backdev-text {
+    white-space: normal; /* allow wrapping */
+  }
+  .backdev-text .back-part,
+  .backdev-text .dev-part {
+    display: block; /* each word on its own line */
+  }
+}
 
 
 
