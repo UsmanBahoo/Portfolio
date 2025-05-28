@@ -76,7 +76,7 @@ function Home() {
                     </svg>
                     <div class="square"></div>
                   </span>
-                  <p class="title">Resume</p>
+                  <p class="title resume-title">Resume</p>
                   <a href='/assets/Usman Baho Mern Stack.pdf' class="title">Open</a>
                 </label>
               </div>

@@ -271,7 +271,13 @@
 }
 
 
-
+  @media (max-width: 320px) {
+      .resume-title {
+        position: static !important;      /* Absolute position hatao */
+        padding-left: 0.1rem !important;    /* Pl-4 dena */
+        margin-left: 0;
+      }
+    }
 
 
 
