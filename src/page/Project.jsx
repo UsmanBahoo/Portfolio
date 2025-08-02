@@ -97,7 +97,7 @@ function Project() {
 
   return (
     <section className='bg-gray-900 py-12' id='project'>
-      <div className="container mx-auto px-4 relative">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative max-w-screen-xl">
         {/* Timeline vertical line */}
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-white z-0"></div>
 

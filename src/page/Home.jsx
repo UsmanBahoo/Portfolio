@@ -12,7 +12,7 @@ function Home() {
   return (
     <div id='home'>
       <section className="bg-gray-900 dark:bg-gray-900">
-        <div className="container mx-auto px-8 py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-screen-xl">
           <div className="flex justify-between items-center md:flex-row flex-col">
             {/* Left Side */}
             <div className="mt-24">

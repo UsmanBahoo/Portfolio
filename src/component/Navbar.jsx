@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div>
       <section className="bg-gray-900 dark:bg-gray-900">
-        <div className='container mx-auto px-4 py-4'>
+        <div className='container mx-auto px-4 py-4 max-w-screen-xl'>
           <nav className="border-gray-200 dark:bg-gray-900">
             <div className="flex flex-wrap items-center justify-between">
               <a className="flex items-center space-x-3 rtl:space-x-reverse">

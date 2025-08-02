@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div id="contact">
       <section className="bg-gray-900 dark:bg-gray-900">
-        <div className="container mx-auto px-8 py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-screen-xl">
             <h1 className="text-4xl font-bold text-center text-sky-600 py-10 underline decoration-sky-600 decoration-4 underline-offset-8">Get in Touch!</h1>
             <p className='text-xl font-normal text-sky-600 text-center'>I'm always excited to hear about new opportunities and collaborations. 
             <em className='block not-italic'>Don't hesitate to reach out and let's make something great</em> </p>
