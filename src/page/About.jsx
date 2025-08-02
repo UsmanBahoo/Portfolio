@@ -17,9 +17,9 @@ export default function About() {
               </p>
 
               <p className="text-xl text-white mt-6 leading-relaxed">
-                I also work with <strong className="text-blue-400">SQL</strong> databases and have
-                professional experience in <strong className="text-red-400">PHP Laravel</strong> for building
-                dynamic and scalable web applications.
+               <strong className="text-red-400">PHP Laravel</strong> for building
+                dynamic and scalable web applications. <span> I also work with <strong className="text-blue-400">SQL</strong> databases and have
+                professional experience in </span>
               </p>
 
               <p className="text-xl text-white mt-6 leading-relaxed">
@@ -34,7 +34,7 @@ export default function About() {
                 I enjoy solving real-world problems with clean code and scalable
                 architectures. Whether it's developing from scratch or improving
                 existing systems, I bring full commitment to every project I
-                work on. ✨
+                work on. 
               </p>
             </div>
           </div>
