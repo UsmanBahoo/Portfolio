@@ -12,7 +12,7 @@ function Navbar() {
           <nav className="border-gray-200 dark:bg-gray-900">
             <div className="flex flex-wrap items-center justify-between">
               <a className="flex items-center space-x-3 rtl:space-x-reverse">
-                <span className="self-center text-xl mt-3 font-semibold whitespace-nowrap text-sky-600">Mern Stack Developer</span>
+                <span className="self-center text-xl font-semibold whitespace-nowrap text-sky-600">Mern Stack Developer</span>
               </a>
 
               {/* Toggle Button */}
