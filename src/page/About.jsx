@@ -9,7 +9,7 @@ export default function About() {
             About
           </h1>
           <div className="justify-center items-center flex flex-col md:flex-row">
-            <div className="text-center max-w-7xl bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-2xl border border-gray-700">
+            <div className="text-center max-w-7xl">
               <p className="text-xl text-white leading-relaxed">
                 Hi! I'm <span className="text-sky-400 font-semibold">Usman Bahoo</span>, a Full Stack Developer with hands-on
                 experience in <strong className="text-emerald-400">MERN Stack</strong> (MongoDB, Express.js,
