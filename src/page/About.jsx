@@ -96,7 +96,7 @@ export default function About() {
                 <div class="flip-card-front">
                   <div className="flex justify-center items-center">
                     <img
-                      src="\assets\fullstack-36c09759.gif"
+                      src="\assets\Node.gif"
                       alt=""
                       loading="lazy"
                       className="w-[100px] h-[100px]"
@@ -181,7 +181,7 @@ export default function About() {
                 <div class="flip-card-front">
                   <div className="flex justify-center items-center">
                     <img
-                      src="/assets/Php.svg"
+                      src="/assets/Php.gif"
                       alt="PHP"
                       loading="lazy"
                       className="w-[100px] h-[100px]"
