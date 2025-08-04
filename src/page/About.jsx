@@ -127,7 +127,7 @@ export default function About() {
                 <div class="flip-card-front">
                   <div className="flex justify-center items-center">
                     <img
-                      src="/assets/shopify.svg"
+                      src="/assets/Shopify.gif"
                       alt="Shopify"
                       loading="lazy"
                       className="w-[100px] h-[100px]"
