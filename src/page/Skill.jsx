@@ -30,7 +30,6 @@ function Skill() {
               ["laravel.svg", "Laravel"],
               ["database.svg", "SQL"],
               ["mongoose.png", "Mongoose"],
-              ["postman.png", "Postman"],
               ["material-ui.png", "Material UI"],
               ["git.png", "Git"],
               ["github.png", "GitHub"],
