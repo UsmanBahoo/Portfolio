@@ -154,7 +154,7 @@ export default function About() {
                 <div class="flip-card-front">
                   <div className="flex justify-center items-center">
                     <img
-                      src="/assets/wordpress.svg"
+                      src="/assets/Wordpress.gif"
                       alt="WordPress"
                       loading="lazy"
                       className="w-[100px] h-[100px]"
