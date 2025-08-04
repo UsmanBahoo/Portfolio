@@ -25,7 +25,7 @@ function Project() {
             <h3 className="text-xl font-bold mt-2 text-white">Chat Application - Mern Stack</h3>
             <p className="text-gray-400">A real-time chat web application built with React and Socket.io featuring instant messaging, user authentication, and responsive design.</p>
             <p className="mt-1 text-sm text-purple-500">React • Node.js • Socket.io • MongoDB • Express</p>
-            <a href="https://camern.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 mt-5 inline-block">View Chat Web Application →</a>
+            <a href="https://camern.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 mt-4 inline-block">View Chat Web Application →</a>
           </div>
 
 
