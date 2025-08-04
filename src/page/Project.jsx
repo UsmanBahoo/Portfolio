@@ -9,8 +9,8 @@ function Project() {
       position: 'left',
       technologies: 'React.js, Redux-toolkit, Next.js, Tailwind CSS',
       points: [
-        'Developed dynamic React.js applications with functional components and custom hooks.',
-        'Implemented Redux-toolkit store with actions, reducers, and middleware for state management.',
+        'Built dynamic React.js apps with functional components and hooks.',
+        'Managed state using Redux-toolkit with actions and reducers.',
         'Built Next.js applications with server-side rendering and static site generation.',
         'Designed responsive layouts using Tailwind CSS flexbox and grid utilities.',
         'Created reusable React components with TypeScript for type safety.',
