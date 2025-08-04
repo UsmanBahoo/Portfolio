@@ -64,7 +64,7 @@ function Project() {
             <a href="https://eexor.pk/" target="_blank" rel="noopener noreferrer">
               <img src="/assets/Eexdr.png" alt="WordPress Website Screenshot" className="w-full h-auto object-cover rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
             </a>
-            <h3 className="text-xl font-bold mt-2 text-white">Eexor - WordPress Business Website</h3>
+            <h3 className="text-xl font-bold mt-2 text-white">Eexor - WordPress Website</h3>
             <p className="text-gray-400">A modern WordPress business website for Eexor, featuring service pages and SEO optimization.</p>
             <p className="mt-1 text-sm text-purple-500">WordPress • PHP • CSS • JavaScript • Responsive Design</p>
             <a href="https://eexor.pk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 mt-4 inline-block">View Eexor Website →</a>
