@@ -87,7 +87,7 @@ function Home() {
               <img
                 src="/assets/usman.jpg"
                 alt="Usman Bahoo"
-                className="rounded-full w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 object-cover"
+                className="rounded-full w-52 h-52 sm:w-72 sm:h-72 md:w-80 md:h-80 object-cover"
               />
             </div>
           </div>
