@@ -35,7 +35,7 @@ function Project() {
             </a>
             <h3 className="text-xl font-bold mt-2 text-white">KeunePakistan - Shopify Store</h3>
             <p className="text-gray-400">A premium Shopify store for Keune professional hair care products featuring product catalogs and brand showcase.</p>
-            <p className="mt-1 text-sm text-purple-500">Shopify • Liquid • CSS • JavaScript • Html</p>
+            <p className="mt-1 text-sm text-purple-500">Shopify • Liquid • Html • CSS • JavaScript </p>
             <a href="https://www.keunepakistan.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 mt-4 inline-block">View Keunepakistan Store →</a>
           </div>
 
