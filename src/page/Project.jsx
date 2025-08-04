@@ -20,7 +20,7 @@ function Project() {
 
           <div className="bg-gray-900 dark:bg-gray-900 shadow-xl rounded-xl p-4">
             <a href="https://camern.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/Chat.png" alt="Chat Application Screenshot" className="w-full h-48 rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
+              <img src="/assets/Chat.png" alt="Chat Application Screenshot" className="w-full h-48 object-cover rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
             </a>
             <h3 className="text-xl font-bold mt-2 text-white flex justify-between">Chat Application <span>Mern Stack</span></h3>
             <p className="text-gray-400">A real-time chat web application built with React and Socket.io featuring instant messaging, user authentication, and responsive design.</p>
@@ -31,7 +31,7 @@ function Project() {
 
           <div className="bg-gray-900 dark:bg-gray-900 shadow-xl rounded-xl p-4">
             <a href="https://www.keunepakistan.com/" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/Keune.png" alt="Keune Pakistan Store Screenshot" className="w-full h-48 rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
+              <img src="/assets/Keune.png" alt="Keune Pakistan Store Screenshot" className="w-full h-48 object-cover rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
             </a>
             <h3 className="text-xl font-bold mt-2 text-white flex justify-between">KeunePakistan <span>Shopify Store</span></h3>
             <p className="text-gray-400">A premium Shopify store for Keune professional hair care products featuring product catalogs and brand showcase.</p>
@@ -42,7 +42,7 @@ function Project() {
 
           <div className="bg-gray-900 dark:bg-gray-900 shadow-xl rounded-xl p-4">
             <a href="https://salondziners.com/" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/Salondziners.png" alt="Salon Dziners Store Screenshot" className="w-full h-48 rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
+              <img src="/assets/Salondziners.png" alt="Salon Dziners Store Screenshot" className="w-full h-48 object-cover rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
             </a>
             <h3 className="text-xl font-bold mt-2 text-white flex justify-between">Salon Designer  <span>Shopify Store</span></h3>
             <p className="text-gray-400">A sophisticated Shopify e-commerce store for salon and beauty products with custom design and optimized experience.</p>
@@ -52,7 +52,7 @@ function Project() {
 
           <div className="bg-gray-900 dark:bg-gray-900 shadow-xl rounded-xl p-4">
             <a href="https://focuspc.co.uk/" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/Focuspc.png" alt="WordPress Website Screenshot" className="w-full h-48 rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
+              <img src="/assets/Focuspc.png" alt="WordPress Website Screenshot" className="w-full h-48 object-cover rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
             </a>
             <h3 className="text-xl font-bold mt-2 text-white flex justify-between">Focuspc <span>WordPress Website</span></h3>
             <p className="text-gray-400">A custom WordPress website for gaming PC business with responsive design and optimized performance.</p>
@@ -62,7 +62,7 @@ function Project() {
 
           <div className="bg-gray-900 dark:bg-gray-900 shadow-xl rounded-xl p-4">
             <a href="https://eexor.pk/" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/Eexdr.png" alt="WordPress Website Screenshot" className="w-full h-48 rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity block" />
+              <img src="/assets/Eexdr.png" alt="WordPress Website Screenshot" className="w-full h-48 object-cover rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
             </a>
             <h3 className="text-xl font-bold mt-2 text-white flex justify-between">Eexor <span>WordPress Website</span></h3>
             <p className="text-gray-400">A modern WordPress business website for Eexor, featuring service pages and SEO optimization with contact forms.</p>
