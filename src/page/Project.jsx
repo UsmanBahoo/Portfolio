@@ -50,7 +50,7 @@ function Project() {
     {
       title: 'WordPress WooCommerce',
       period: 'Sep 2024 - Present',
-      icon: '/assets/woocommerce.svg',
+      icon: '/assets/wordpress.svg',
       position: 'right',
       technologies: 'WordPress, WooCommerce',
       points: [
