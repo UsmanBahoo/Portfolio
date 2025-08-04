@@ -11,10 +11,10 @@ function Project() {
       points: [
         'Built dynamic React.js apps with functional components and hooks.',
         'Managed state using Redux-toolkit with actions and reducers.',
-        'Built Next.js applications with server-side rendering and static site generation.',
-        'Designed responsive layouts using Tailwind CSS flexbox and grid utilities.',
-        'Created reusable React components with JavaScript for better code organization.',
-        'Optimized Next.js performance with image optimization and code splitting.',
+        'Built Next.js apps with SSR and static site generation.',
+        'Designed responsive layouts using Tailwind CSS utilities.',
+        'Created reusable React components with JavaScript.',
+        'Optimized Next.js performance with image and code splitting.',
       ],
     },
     {
