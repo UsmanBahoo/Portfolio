@@ -62,7 +62,7 @@ function Project() {
 
           <div className="bg-gray-900 dark:bg-gray-900 shadow-xl rounded-xl p-4">
             <a href="https://eexor.pk/" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/Eexdr.png" alt="WordPress Website Screenshot" className="w-full h-48 object-cover rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
+              <img src="/assets/Eexdr.png" alt="WordPress Website Screenshot" className="w-full h-48 rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity block" />
             </a>
             <h3 className="text-xl font-bold mt-2 text-white">Eexor - WordPress Website</h3>
             <p className="text-gray-400">A modern WordPress business website for Eexor, featuring service pages and SEO optimization with contact forms.</p>
