@@ -13,7 +13,7 @@ function Project() {
         'Managed state using Redux-toolkit with actions and reducers.',
         'Built Next.js applications with server-side rendering and static site generation.',
         'Designed responsive layouts using Tailwind CSS flexbox and grid utilities.',
-        'Created reusable React components with TypeScript for type safety.',
+        'Created reusable React components with JavaScript for better code organization.',
         'Optimized Next.js performance with image optimization and code splitting.',
       ],
     },
