@@ -12,7 +12,7 @@ function Project() {
             <a href="https://foodmern.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src="/assets/Food.png" alt="Food Delivery App Screenshot" className="w-full h-48 object-cover rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
             </a>
-            <h3 className="text-xl font-bold mt-2 text-white">Food Delivery- Mern Stack </h3>
+            <h3 className="text-xl font-bold mt-2 text-white">Food Delivery - Mern Stack</h3>
             <p className="text-gray-400">A React + Express.js + MongoDB + Node.js-based food delivery system with categories, JWT authentication and Bcrypt password hashing.</p>
             <p className="mt-1 text-sm text-purple-500">MongoDB • Express.js • Node.js • React • TailwindCss</p>
             <a href="https://foodmern.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 mt-4 inline-block">View Food Delivery →</a>
@@ -22,7 +22,7 @@ function Project() {
             <a href="https://camern.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src="/assets/Chat.png" alt="Chat Application Screenshot" className="w-full h-48 object-cover rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
             </a>
-            <h3 className="text-xl font-bold mt-2 text-white">Chat Application Mern Stack</h3>
+            <h3 className="text-xl font-bold mt-2 text-white">Chat Application - Mern Stack</h3>
             <p className="text-gray-400">A real-time chat web application built with React and Socket.io featuring instant messaging, user authentication, and responsive design.</p>
             <p className="mt-1 text-sm text-purple-500">React • Node.js • Socket.io • MongoDB • Express</p>
             <a href="https://camern.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 mt-2 inline-block">View Chat Web Application →</a>
@@ -65,7 +65,7 @@ function Project() {
               <img src="/assets/Eexdr.png" alt="WordPress Website Screenshot" className="w-full h-48 object-cover rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
             </a>
             <h3 className="text-xl font-bold mt-2 text-white">Eexor - WordPress Website</h3>
-            <p className="text-gray-400">A modern WordPress business website for Eexor, featuring service pages and SEO optimization.</p>
+            <p className="text-gray-400">A modern WordPress business website for Eexor, featuring service pages and SEO optimization with contact forms.</p>
             <p className="mt-1 text-sm text-purple-500">WordPress • PHP • CSS • JavaScript • Responsive Design</p>
             <a href="https://eexor.pk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 mt-4 inline-block">View Eexor Website →</a>
           </div>
