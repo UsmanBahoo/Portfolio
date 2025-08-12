@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// eslint-disable-next-line
+import { motion } from 'framer-motion';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +10,12 @@ function Navbar() {
   return (
     <div>
       <section className="bg-gray-900 dark:bg-gray-900">
-        <div className='container mx-auto px-4 py-4 max-w-screen-xl'>
+        <motion.div
+          initial={{ opacity: 0, y: -60 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, type: 'spring', bounce: 0.2 }}
+          className='container mx-auto px-4 py-4 max-w-screen-xl'
+        >
           <nav className="border-gray-200 dark:bg-gray-900">
             <div className="flex flex-wrap items-center justify-between">
               <a className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -34,9 +41,10 @@ function Navbar() {
                     <li key={section}>
                       <a
                         href={`#${section}`}
-                        className="block py-2 px-3 text-md text-sky-600 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        className="block py-2 px-3 text-md text-sky-600 rounded-sm group relative overflow-hidden hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                       >
-                        {section.charAt(0).toUpperCase() + section.slice(1)}
+                        <span className="relative z-10">{section.charAt(0).toUpperCase() + section.slice(1)}</span>
+                        <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 z-0"></span>
                       </a>
                     </li>
                   ))}
@@ -44,7 +52,7 @@ function Navbar() {
               </div>
             </div>
           </nav>
-        </div>
+        </motion.div>
       </section>
     </div>
   );

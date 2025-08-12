@@ -1,4 +1,5 @@
 import React from "react";
+import { motion as Motion } from "framer-motion";
 
 function Skill() {
   return (
@@ -9,7 +10,13 @@ function Skill() {
             Skill
           </h1>
 
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-6">
+          <Motion.div
+            className="flex flex-wrap justify-center gap-x-6 gap-y-6"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             {[
               ["html.png", "HTML"],
               ["css.png", "CSS"],
@@ -35,9 +42,14 @@ function Skill() {
               ["github.png", "GitHub"],
               
             ].map(([src, title]) => (
-              <div
+              <Motion.div
                 className="sm:w-1/4 md:w-1/6 w-1/3 lg:w-1/16 flex flex-col items-center"
                 key={title}
+                whileHover={{ scale: 1.1 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
               >
                 <img
                   src={`/assets/${src}`}
@@ -45,15 +57,21 @@ function Skill() {
                   className="w-[80px] h-[80px]"
                 />
                 <h1 className="text-xs text-center text-white mt-2">{title}</h1>
-              </div>
+              </Motion.div>
             ))}
-          </div>
+          </Motion.div>
 
           <h1 className="text-4xl font-bold text-center text-sky-600 py-10">
             Tools and Software
           </h1>
 
-          <div className="flex flex-wrap justify-center gap-x-10 gap-y-10">
+          <Motion.div
+            className="flex flex-wrap justify-center gap-x-10 gap-y-10"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             {[
               ["vscode.png", "VS Code"],
               ["ChatGPT.png", "ChatGPT"],
@@ -63,9 +81,14 @@ function Skill() {
               ["postman.png", "Postman"],
               
             ].map(([src, title]) => (
-              <div
+              <Motion.div
                 className="sm:w-1/4 md:w-1/6 w-1/3 lg:w-1/12 flex flex-col items-center"
                 key={title}
+                whileHover={{ scale: 1.1 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
               >
                 <img
                   src={`/assets/${src}`}
@@ -73,9 +96,9 @@ function Skill() {
                   className="w-[80px] h-[80px]"
                 />
                 <h1 className="text-xs text-center text-white mt-2">{title}</h1>
-              </div>
+              </Motion.div>
             ))}
-          </div>
+          </Motion.div>
         </div>
       </section>
 
@@ -85,7 +108,7 @@ function Skill() {
           {/* Timeline vertical line */}
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-white z-0"></div>
 
-          {[
+          {[ 
             {
               title: 'Frontend Development',
               period: 'July 2024 - Present',
@@ -177,11 +200,15 @@ function Skill() {
               ],
             },
           ].map((proj, idx) => (
-            <div
+            <Motion.div
               key={idx}
               className={`relative mb-12 flex flex-col md:flex-row items-center md:items-start ${
                 proj.position === 'left' ? 'md:justify-start' : 'md:justify-end'
               }`}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: idx * 0.2 }}
             >
               {/* Small screen icon above the card */}
               <div className="block md:hidden mb-4">
@@ -233,7 +260,7 @@ function Skill() {
                   </div>
                 </div>
               )}
-            </div>
+            </Motion.div>
           ))}
         </div>
       </section>

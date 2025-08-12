@@ -1,44 +1,88 @@
 import React from "react";
+import { motion as Motion } from "framer-motion";
 
 export default function About() {
   return (
     <div id="about">
       <section className="bg-gray-900 dark:bg-gray-900 ">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-screen-xl">
-          <h1 className="text-4xl font-bold text-center text-sky-600 py-10">
+          <Motion.h1
+            className="text-4xl font-bold text-center text-sky-600 py-10"
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             About
-          </h1>
+          </Motion.h1>
           <div className="justify-center items-center flex flex-col md:flex-row">
-            <div className="text-center max-w-7xl">
-              <p className="text-xl text-white leading-relaxed">
+            <Motion.div
+              className="text-center max-w-7xl"
+              initial={{ opacity: 0, x: -80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <Motion.p
+                className="text-xl text-white leading-relaxed"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.1 }}
+              >
                 Hi! I'm <span className="text-sky-400 font-semibold">Usman Bahoo</span>, a Full Stack Developer with hands-on
                 experience in <strong className="text-emerald-400">MERN Stack</strong> (MongoDB, Express.js,
                 React.js, Node.js).
-              </p>
-
-              <p className="text-xl text-white mt-6 leading-relaxed">
-               <strong className="text-red-400">PHP Laravel</strong> for building
+              </Motion.p>
+              <Motion.p
+                className="text-xl text-white mt-6 leading-relaxed"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+              >
+                <strong className="text-red-400">PHP Laravel</strong> for building
                 dynamic and scalable web applications. <span> I also work with <strong className="text-blue-400">SQL</strong> databases and have
                 professional experience in </span>
-              </p>
-
-              <p className="text-xl text-white mt-6 leading-relaxed">
+              </Motion.p>
+              <Motion.p
+                className="text-xl text-white mt-6 leading-relaxed"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.3 }}
+              >
                 I also have professional experience in <strong className="text-green-400">Shopify</strong> development, delivering customized e-commerce solutions.
-              </p>
-
-              <p className="text-xl text-white mt-6 leading-relaxed">
+              </Motion.p>
+              <Motion.p
+                className="text-xl text-white mt-6 leading-relaxed"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.4 }}
+              >
                 I also work with <strong className="text-purple-400">WordPress</strong> development, creating custom themes, plugins, and comprehensive CMS solutions for diverse business needs.
-              </p>
-
-              <p className="text-xl text-white mt-6 leading-relaxed">
+              </Motion.p>
+              <Motion.p
+                className="text-xl text-white mt-6 leading-relaxed"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.5 }}
+              >
                 I enjoy solving real-world problems with clean code and scalable
                 architectures. Whether it's developing from scratch or improving
                 existing systems, I bring full commitment to every project I
                 work on. 
-              </p>
-            </div>
+              </Motion.p>
+            </Motion.div>
           </div>
-          <div className="flex justify-center items-center mt-10 md:flex-row flex-col gap-20">
+          <Motion.div
+            className="flex justify-center items-center mt-10 md:flex-row flex-col gap-20"
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -65,7 +109,14 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div class="flip-card">
+            <Motion.div
+              class="flip-card"
+              whileHover={{ scale: 1.05 }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <div className="flex justify-center items-center">
@@ -90,8 +141,15 @@ export default function About() {
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="flip-card">
+            </Motion.div>
+            <Motion.div
+              class="flip-card"
+              whileHover={{ scale: 1.05 }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <div className="flex justify-center items-center">
@@ -118,11 +176,24 @@ export default function About() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </Motion.div>
+          </Motion.div>
 
-          <div className="flex justify-center items-center mt-10 md:flex-row flex-col gap-20">
-            <div class="flip-card">
+          <Motion.div
+            className="flex justify-center items-center mt-10 md:flex-row flex-col gap-20"
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <Motion.div
+              class="flip-card"
+              whileHover={{ scale: 1.05 }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <div className="flex justify-center items-center">
@@ -147,9 +218,16 @@ export default function About() {
                   </p>
                 </div>
               </div>
-            </div>
+            </Motion.div>
 
-            <div class="flip-card">
+            <Motion.div
+              class="flip-card"
+              whileHover={{ scale: 1.05 }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <div className="flex justify-center items-center">
@@ -174,9 +252,16 @@ export default function About() {
                   </p>
                 </div>
               </div>
-            </div>
+            </Motion.div>
 
-            <div class="flip-card">
+            <Motion.div
+              class="flip-card"
+              whileHover={{ scale: 1.05 }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <div className="flex justify-center items-center">
@@ -201,10 +286,9 @@ export default function About() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </Motion.div>
+          </Motion.div>
         </div>
-         
       </section>
     </div>
   );
