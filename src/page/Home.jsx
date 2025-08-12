@@ -1,5 +1,5 @@
-import React from 'react';
-// import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+
 import { Typewriter } from 'react-simple-typewriter';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
@@ -10,22 +10,23 @@ import 'swiper/css/navigation';
 // import githubIcon from '../assets/github.svg'
 
 function Home() {
+  const [leftVisible, setLeftVisible] = useState(false);
+  const [rightVisible, setRightVisible] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setLeftVisible(true), 100);
+    setTimeout(() => setRightVisible(true), 400);
+  }, []);
   return (
   <div id='home' className="overflow-x-hidden">
       <section className="bg-gray-900 dark:bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-screen-xl">
-          <motion.div
+          <div
             className="flex justify-between items-center md:flex-row flex-col"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
           >
             {/* Left Side */}
-            <motion.div
-              className="mt-24"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.3 }}
+            <div
+              className={`mt-24 transition-all duration-1000 ${leftVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'}`}
             >
               <h1 className="text-white text-3xl font-medium">Hey! It's Me</h1>
               <h1 className="text-sky-600 text-6xl font-bold mt-2">USMAN BAHO</h1>
@@ -91,23 +92,19 @@ function Home() {
                   <a href='/assets/USMAN BAHOO Mern Stack.pdf' class="title">Open</a>
                 </label>
               </div>
-            </motion.div>
+            </div>
 
             {/* Right Side Image */}
-            <motion.div
-              className="mt-20"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.6 }}
+            <div
+              className={`mt-20 transition-all duration-1000 ${rightVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'}`}
             >
               <img
                 src="/assets/usman.jpg"
                 alt="Usman Bahoo"
                 className="rounded-full w-52 h-52 sm:w-72 sm:h-72 md:w-80 md:h-80 object-cover"
               />
-            </motion.div>
-          </motion.div>
-
+            </div>
+          </div>
         {/* Swiper Slider */}
           <div className="mt-20 flex justify-center items-center ">
                <Swiper
