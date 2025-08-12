@@ -11,7 +11,7 @@ function Skill() {
           </h1>
 
           <Motion.div
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 justify-center"
+            className="flex flex-row flex-wrap justify-center gap-4"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -54,7 +54,7 @@ function Skill() {
                 <img
                   src={`/assets/${src}`}
                   alt={title}
-                  className="w-[80px] h-[80px]"
+                  className="w-[80px] h-[80px] object-contain"
                 />
                 <h1 className="text-xs text-center text-white mt-2">{title}</h1>
               </Motion.div>
