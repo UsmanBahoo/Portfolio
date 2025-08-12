@@ -4,19 +4,19 @@ import { motion } from 'framer-motion';
 
 function Project() {
   return (
-    <section className='bg-gray-900 dark:bg-gray-900'>
+  <section className='bg-gray-900 dark:bg-gray-900 overflow-x-hidden'>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-screen-xl">
         <h1 className="text-4xl font-bold text-center text-sky-600 py-10">
           Projects
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {/* Food Delivery */}
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, type: 'spring', bounce: 0.2 }}
             viewport={{ once: true }}
-            className="bg-gray-900 dark:bg-gray-900 shadow-xl rounded-xl p-4"
+            className="bg-gray-900 dark:bg-gray-900 shadow-xl rounded-xl p-3 sm:p-4"
           >
             <a href="https://foodmern.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src="/assets/Food.png" alt="Food Delivery App Screenshot" className="w-full h-48 rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />

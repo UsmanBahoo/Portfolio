@@ -3,9 +3,9 @@ import { motion as Motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div id="about">
+  <div id="about" className="overflow-x-hidden">
       <section className="bg-gray-900 dark:bg-gray-900 ">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-screen-xl">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10 max-w-screen-xl">
           <Motion.h1
             className="text-4xl font-bold text-center text-sky-600 py-10"
             initial={{ opacity: 0, y: -30 }}
@@ -14,9 +14,9 @@ export default function About() {
           >
             About
           </Motion.h1>
-          <div className="justify-center items-center flex flex-col md:flex-row">
+          <div className="justify-center items-center flex flex-col md:flex-row gap-8 md:gap-16">
             <Motion.div
-              className="text-center max-w-7xl"
+              className="text-center max-w-2xl md:max-w-3xl lg:max-w-4xl"
               initial={{ opacity: 0, x: -80 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

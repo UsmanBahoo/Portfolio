@@ -50,8 +50,8 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="bg-gray-900 dark:bg-gray-900" id="testimonials">
-      <div className="container mx-auto max-w-screen-xl px-4 sm:px-6 md:px-8 py-8">
+  <section className="bg-gray-900 dark:bg-gray-900 overflow-x-hidden" id="testimonials">
+  <div className="container mx-auto max-w-screen-xl px-2 sm:px-4 md:px-8 py-6 md:py-8">
         <h1 className="text-4xl font-bold text-center text-sky-600 py-2">
           Testimonials
         </h1>
@@ -76,7 +76,7 @@ function Testimonials() {
         >
           {testimonials.map((t, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-[#0D1117] text-white p-6 rounded-xl shadow-md min-h-[360px] flex flex-col justify-between">
+              <div className="bg-[#0D1117] text-white p-4 sm:p-6 rounded-xl shadow-md min-h-[320px] sm:min-h-[360px] flex flex-col justify-between">
                 <div className="flex justify-between items-start mb-4">
                   <svg
                     stroke="currentColor"
