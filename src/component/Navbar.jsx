@@ -65,7 +65,7 @@ function Navbar() {
                     <li className="block lg:hidden mt-2">
                       <button
                         onClick={toggleTheme}
-                        className="ml-0 p-2 hidden lg:inline-flex cursor-pointer"
+                        className="ml-0 p-2 inline-flex cursor-pointer"
                         aria-label="Toggle theme"
                         title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
                       >
