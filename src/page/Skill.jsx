@@ -1,10 +1,17 @@
 import React from "react";
+import { useTheme } from '../context/useTheme';
 import { motion as Motion } from "framer-motion";
 
 function Skill() {
+  const { theme } = useTheme();
+  const cardBg = theme === 'dark' ? 'bg-[#22223b]' : 'bg-gray-100';
+  const cardStyle = theme === 'dark' ? { backgroundColor: '#22223b' } : { backgroundColor: '#f3f4f6' };
+  const textClass = theme === 'dark' ? 'text-white' : 'text-black';
+  const sectionBg = theme === 'dark' ? 'bg-[#22223b]' : 'bg-white';
+  const sectionStyle = theme === 'dark' ? { backgroundColor: '#22223b' } : { backgroundColor: '#fff' };
   return (
-  <div id="skill" className="overflow-x-hidden">
-      <section className="bg-gray-900 dark:bg-gray-900">
+    <div id="skill" className="overflow-x-hidden">
+      <section className={sectionBg} style={sectionStyle}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-screen-xl">
           <h1 className="text-4xl font-bold text-center text-sky-600 py-10">
             Skill
@@ -43,7 +50,8 @@ function Skill() {
               
             ].map(([src, title]) => (
               <Motion.div
-                className="flex flex-col items-center"
+                className={`flex flex-col items-center rounded-lg shadow-md ${cardBg}`}
+                style={cardStyle}
                 key={title}
                 whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0, y: 30 }}
@@ -55,8 +63,9 @@ function Skill() {
                   src={`/assets/${src}`}
                   alt={title}
                   className="w-[80px] h-[80px] object-contain"
+                  style={cardStyle}
                 />
-                <h1 className="text-xs text-center text-white mt-2">{title}</h1>
+                <h1 className={`text-xs text-center mt-2 ${textClass}`}>{title}</h1>
               </Motion.div>
             ))}
           </Motion.div>
@@ -82,7 +91,8 @@ function Skill() {
               
             ].map(([src, title]) => (
               <Motion.div
-                className="sm:w-1/4 md:w-1/6 w-1/3 lg:w-1/12 flex flex-col items-center"
+                className={`sm:w-1/4 md:w-1/6 w-1/3 lg:w-1/12 flex flex-col items-center rounded-lg shadow-md ${cardBg}`}
+                style={cardStyle}
                 key={title}
                 whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0, y: 30 }}
@@ -94,8 +104,9 @@ function Skill() {
                   src={`/assets/${src}`}
                   alt={title}
                   className="w-[80px] h-[80px]"
+                  style={cardStyle}
                 />
-                <h1 className="text-xs text-center text-white mt-2">{title}</h1>
+                <h1 className={`text-xs text-center mt-2 ${textClass}`}>{title}</h1>
               </Motion.div>
             ))}
           </Motion.div>
@@ -103,10 +114,10 @@ function Skill() {
       </section>
 
       {/* Projects Section */}
-      <section className='bg-gray-900 py-12' id='project'>
+      <section className={sectionBg} style={sectionStyle} id='project'>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative max-w-screen-xl">
           {/* Timeline vertical line */}
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-white z-0"></div>
+          <div className={`absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 z-0 ${theme === 'light' ? 'bg-black' : 'bg-white'}`}></div>
 
           {[ 
             {
@@ -220,10 +231,10 @@ function Skill() {
               {/* Left side card */}
               {proj.position === 'left' && (
                 <div className="md:w-1/2 p-6 mt-10">
-                  <div className="bg-[#0D1117] text-white p-6 rounded-lg shadow-lg">
-                    <h1 className="text-2xl font-bold mb-2">{proj.title}</h1>
-                    <h2 className="text-lg font-semibold mb-4">{proj.technologies}</h2>
-                    <ul className="list-disc list-inside space-y-2 text-sm">
+                  <div className="rounded-lg shadow-lg p-6" style={cardStyle}>
+                    <h1 className={`text-2xl font-bold mb-2 ${textClass}`}>{proj.title}</h1>
+                    <h2 className={`text-lg font-semibold mb-4 ${textClass}`}>{proj.technologies}</h2>
+                    <ul className={`list-disc list-inside space-y-2 text-sm ${textClass}`}>
                       {proj.points.map((point, i) => (
                         <li key={i}>{point}</li>
                       ))}
@@ -249,10 +260,10 @@ function Skill() {
               {/* Right side card */}
               {proj.position === 'right' && (
                 <div className="md:w-1/2 p-6 mt-10">
-                  <div className="bg-[#0D1117] text-white p-6 rounded-lg shadow-lg">
-                    <h1 className="text-2xl font-bold mb-2">{proj.title}</h1>
-                    <h2 className="text-lg font-semibold mb-4">{proj.technologies}</h2>
-                    <ul className="list-disc list-inside space-y-2 text-sm">
+                  <div className="rounded-lg shadow-lg p-6" style={cardStyle}>
+                    <h1 className={`text-2xl font-bold mb-2 ${textClass}`}>{proj.title}</h1>
+                    <h2 className={`text-lg font-semibold mb-4 ${textClass}`}>{proj.technologies}</h2>
+                    <ul className={`list-disc list-inside space-y-2 text-sm ${textClass}`}>
                       {proj.points.map((point, i) => (
                         <li key={i}>{point}</li>
                       ))}

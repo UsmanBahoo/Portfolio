@@ -1,32 +1,35 @@
 import React, { useState } from 'react';
+import { useTheme } from '../context/useTheme';
 // eslint-disable-next-line
 import { motion } from 'framer-motion';
 
+
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const { theme, toggleTheme } = useTheme();
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <div>
-      <section className="bg-gray-900 dark:bg-gray-900">
+  <section className={theme === 'dark' ? 'bg-gray-900' : 'bg-white'}>
         <motion.div
           initial={{ opacity: 0, y: -60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, type: 'spring', bounce: 0.2 }}
-          className='container mx-auto px-4 py-4 max-w-screen-xl'
+          className='w-full px-4 py-4 lg:container lg:mx-auto lg:max-w-screen-xl'
         >
-          <nav className="border-gray-200 dark:bg-gray-900">
-            <div className="flex flex-wrap items-center justify-between">
+          <nav className={`w-full border-gray-200 ${theme === 'dark' ? 'dark:bg-gray-900' : 'bg-white'}`}>
+            <div className="flex flex-wrap items-center justify-between w-full">
+
               <a className="flex items-center space-x-3 rtl:space-x-reverse">
                 <span className="self-center text-xl font-semibold whitespace-nowrap text-sky-600">Mern Stack Developer</span>
               </a>
 
-              {/* Toggle Button */}
+              {/* Mobile Menu Toggle Button */}
               <button
                 onClick={toggleMenu}
                 type="button"
-                className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-label={isMenuOpen ? 'Close main menu' : 'Open main menu'}
               >
                 <span className="sr-only">{isMenuOpen ? 'Close main menu' : 'Open main menu'}</span>
@@ -43,21 +46,55 @@ function Navbar() {
                 )}
               </button>
 
-              {/* Navigation Links */}
-              <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto mt-4`} id="navbar-default">
-                <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                  {['home', 'about', 'skill', 'project', 'testimonials', 'contact'].map((section) => (
-                    <li key={section}>
-                      <a
-                        href={`#${section}`}
-                        className="block py-2 px-3 text-md text-sky-600 rounded-sm group relative overflow-hidden hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              {/* Navigation Links and Theme Toggle for Large Screens */}
+              <div className="flex items-center">
+                <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full lg:block lg:w-auto mt-4 lg:mt-0`} id="navbar-default">
+                  <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border rounded-lg lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
+                    {['home', 'about', 'skill', 'project', 'testimonials', 'contact'].map((section) => (
+                      <li key={section}>
+                        <a
+                          href={`#${section}`}
+                          className="block py-2 px-3 text-md text-sky-600 rounded-sm group relative overflow-hidden hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+                        >
+                          <span className="relative z-10">{section.charAt(0).toUpperCase() + section.slice(1)}</span>
+                          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 z-0"></span>
+                        </a>
+                      </li>
+                    ))}
+                    {/* Theme Toggle Button for Small Screens (inside menu) */}
+                    <li className="block lg:hidden mt-2">
+                      <button
+                        onClick={toggleTheme}
+                        className="ml-0 p-2 hidden lg:inline-flex cursor-pointer"
+                        aria-label="Toggle theme"
+                        title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
                       >
-                        <span className="relative z-10">{section.charAt(0).toUpperCase() + section.slice(1)}</span>
-                        <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 z-0"></span>
-                      </a>
+                        {theme === 'dark' ? (
+                          // Dark icon
+                          <img src="/assets/dark.png" alt="Dark icon" className="h-8 w-20" />
+                        ) : (
+                          // Light icon
+                          <img src="/assets/light.png" alt="Light icon" className="h-8 w-20" />
+                        )}
+                      </button>
                     </li>
-                  ))}
-                </ul>
+                  </ul>
+                </div>
+                {/* Theme Toggle Button for Large Screens (after navbar) */}
+                <button
+                  onClick={toggleTheme}
+                  className="ml-4 p-2 hidden lg:inline-flex cursor-pointer"
+                  aria-label="Toggle theme"
+                  title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+                >
+                  {theme === 'dark' ? (
+                    // Dark icon
+                    <img src="/assets/dark.png" alt="Dark icon" className="h-8 w-20" />
+                  ) : (
+                    // Light icon
+                    <img src="/assets/light.png" alt="Light icon" className="h-8 w-20" />
+                  )}
+                </button>
               </div>
             </div>
           </nav>

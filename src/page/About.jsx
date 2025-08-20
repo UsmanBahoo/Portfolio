@@ -1,10 +1,19 @@
 import React from "react";
+import { useTheme } from '../context/useTheme';
 import { motion as Motion } from "framer-motion";
 
 export default function About() {
+  const { theme } = useTheme();
+  const textClass = theme === 'dark' ? 'text-white' : 'text-black';
+  // Always use bg-white in light, bg-[#22223b] in dark, fallback to inline style for reliability
+  const flipFrontBg = theme === 'dark' ? 'bg-[#22223b]' : 'bg-white';
+  const flipBackBg = theme === 'dark' ? 'bg-[#22223b]' : 'bg-white';
+  const flipFrontStyle = theme === 'dark' ? { backgroundColor: '#22223b' } : { backgroundColor: '#fff' };
+  const flipBackStyle = theme === 'dark' ? { backgroundColor: '#22223b' } : { backgroundColor: '#fff' };
+
   return (
   <div id="about" className="overflow-x-hidden">
-      <section className="bg-gray-900 dark:bg-gray-900 ">
+      <section className={theme === 'dark' ? 'bg-gray-900' : 'bg-white'}>
   <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10 max-w-screen-xl">
           <Motion.h1
             className="text-4xl font-bold text-center text-sky-600 py-10"
@@ -23,7 +32,7 @@ export default function About() {
               transition={{ duration: 0.8 }}
             >
               <Motion.p
-                className="text-xl text-white leading-relaxed"
+                className={`text-xl leading-relaxed ${textClass}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -34,7 +43,7 @@ export default function About() {
                 React.js, Node.js).
               </Motion.p>
               <Motion.p
-                className="text-xl text-white mt-6 leading-relaxed"
+                className={`text-xl mt-6 leading-relaxed ${textClass}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -45,7 +54,7 @@ export default function About() {
                 professional experience in </span>
               </Motion.p>
               <Motion.p
-                className="text-xl text-white mt-6 leading-relaxed"
+                className={`text-xl mt-6 leading-relaxed ${textClass}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -54,7 +63,7 @@ export default function About() {
                 I also have professional experience in <strong className="text-green-400">Shopify</strong> development, delivering customized e-commerce solutions.
               </Motion.p>
               <Motion.p
-                className="text-xl text-white mt-6 leading-relaxed"
+                className={`text-xl mt-6 leading-relaxed ${textClass}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -63,7 +72,7 @@ export default function About() {
                 I also work with <strong className="text-purple-400">WordPress</strong> development, creating custom themes, plugins, and comprehensive CMS solutions for diverse business needs.
               </Motion.p>
               <Motion.p
-                className="text-xl text-white mt-6 leading-relaxed"
+                className={`text-xl mt-6 leading-relaxed ${textClass}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -85,7 +94,7 @@ export default function About() {
           >
             <div class="flip-card">
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div className={`flip-card-front ${flipFrontBg}`} style={flipFrontStyle}>
                   <div className="flex justify-center items-center md:flex-row flex-col">
                     <img
                       src="\assets\responsive.Svg.gif"
@@ -94,12 +103,12 @@ export default function About() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <p className="text-xl font-bold text-white text-centerc mt-10">
+                  <p className={`text-xl font-bold text-center mt-10 ${textClass}`}>
                     RESPONSIVE DESIGN
                   </p>
                 </div>
-                <div class="flip-card-back">
-                  <p className="text-md text-white text-center">
+                <div className={`flip-card-back ${flipBackBg}`} style={flipBackStyle}>
+                  <p className={`text-md text-center ${textClass}`}>
                     An approach that makes websites visually appealing and
                     functional across all devices — mobiles, tablets, and
                     desktops. It enhances user experience by adapting layout and
@@ -118,7 +127,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div className={`flip-card-front ${flipFrontBg}`} style={flipFrontStyle}>
                   <div className="flex justify-center items-center">
                     <img
                       src="\assets\react-23c4d31a.gif"
@@ -127,12 +136,12 @@ export default function About() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <p className="text-xl font-bold text-white text-center mt-10">
+                  <p className={`text-xl font-bold text-center mt-10 ${textClass}`}>
                     React.js & Next.js
                   </p>
                 </div>
-                <div class="flip-card-back">
-                  <p className="text-md text-white text-center">
+                <div className={`flip-card-back ${flipBackBg}`} style={flipBackStyle}>
+                  <p className={`text-md text-center ${textClass}`}>
                     It involves building dynamic and interactive user interfaces
                     using React.js. React enables reusable components, efficient
                     state management, and a virtual DOM for fast rendering. The
@@ -151,7 +160,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div className={`flip-card-front ${flipFrontBg}`} style={flipFrontStyle}>
                   <div className="flex justify-center items-center">
                     <img
                       src="\assets\Node.gif"
@@ -160,12 +169,12 @@ export default function About() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <p className="text-xl font-bold text-white text-center mt-10 ">
+                  <p className={`text-xl font-bold text-center mt-10 ${textClass}`}>
                     Express.js & Node.js & MongoDB
                   </p>
                 </div>
-                <div class="flip-card-back">
-                  <p className="text-md text-white text-center">
+                <div className={`flip-card-back ${flipBackBg}`} style={flipBackStyle}>
+                  <p className={`text-md text-center ${textClass}`}>
                     A powerful full-stack JavaScript framework combining
                     MongoDB, Express.js, React.js, and Node.js. It allows
                     developers to build scalable, high-performance web
@@ -195,7 +204,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div className={`flip-card-front ${flipFrontBg}`} style={flipFrontStyle}>
                   <div className="flex justify-center items-center">
                     <img
                       src="/assets/Shopify.gif"
@@ -204,12 +213,12 @@ export default function About() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <p className="text-xl font-bold text-white text-center mt-10">
+                  <p className={`text-xl font-bold text-center mt-10 ${textClass}`}>
                     Shopify Development
                   </p>
                 </div>
-                <div class="flip-card-back">
-                  <p className="text-md text-white text-center">
+                <div className={`flip-card-back ${flipBackBg}`} style={flipBackStyle}>
+                  <p className={`text-md text-center ${textClass}`}>
                     Building custom e-commerce stores using Shopify platform
                     with Liquid templating. Creating responsive themes,
                     integrating payment gateways, and optimizing for
@@ -229,7 +238,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div className={`flip-card-front ${flipFrontBg}`} style={flipFrontStyle}>
                   <div className="flex justify-center items-center">
                     <img
                       src="/assets/Wordpress.gif"
@@ -238,12 +247,12 @@ export default function About() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <p className="text-xl font-bold text-white text-center mt-10">
+                  <p className={`text-xl font-bold text-center mt-10 ${textClass}`}>
                     WordPress & WooCommerce
                   </p>
                 </div>
-                <div class="flip-card-back">
-                  <p className="text-md text-white text-center">
+                <div className={`flip-card-back ${flipBackBg}`} style={flipBackStyle}>
+                  <p className={`text-md text-center ${textClass}`}>
                     Developing custom WordPress themes and WooCommerce stores
                     with advanced functionality. Creating custom plugins,
                     payment integrations, and optimizing database performance.
@@ -263,7 +272,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div className={`flip-card-front ${flipFrontBg}`} style={flipFrontStyle}>
                   <div className="flex justify-center items-center">
                     <img
                       src="/assets/Php.gif"
@@ -272,12 +281,12 @@ export default function About() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <p className="text-xl font-bold text-white text-center mt-10">
+                  <p className={`text-xl font-bold text-center mt-10 ${textClass}`}>
                     PHP & Laravel & SQL
                   </p>
                 </div>
-                <div class="flip-card-back">
-                  <p className="text-md text-white text-center">
+                <div className={`flip-card-back ${flipBackBg}`} style={flipBackStyle}>
+                  <p className={`text-md text-center ${textClass}`}>
                     Building robust web applications using Laravel framework
                     with PHP and MySQL. Implementing RESTful APIs, Eloquent ORM
                     for database operations, and authentication systems.

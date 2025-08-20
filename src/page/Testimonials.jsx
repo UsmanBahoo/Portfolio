@@ -1,7 +1,9 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-
+import { useTheme } from '../context/useTheme';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const testimonials = [
   {
@@ -49,16 +51,21 @@ const testimonials = [
 ];
 
 function Testimonials() {
+  const { theme } = useTheme();
+  const sectionBg = theme === 'dark' ? 'bg-[#22223b]' : 'bg-white';
+  const sectionStyle = theme === 'dark' ? { backgroundColor: '#22223b' } : { backgroundColor: '#fff' };
+  const cardBg = theme === 'dark' ? 'bg-[#0D1117]' : 'bg-gray-100';
+  const cardStyle = theme === 'dark' ? { backgroundColor: '#0D1117' } : { backgroundColor: '#f3f4f6' };
+  const textClass = theme === 'dark' ? 'text-white' : 'text-black';
   return (
-  <section className="bg-gray-900 dark:bg-gray-900 overflow-x-hidden" id="testimonials">
-  <div className="container mx-auto max-w-screen-xl px-2 sm:px-4 md:px-8 py-6 md:py-8">
+    <section className={`${sectionBg} ${textClass} overflow-x-hidden`} style={sectionStyle} id="testimonials">
+      <div className="container mx-auto max-w-screen-xl px-2 sm:px-4 md:px-8 py-6 md:py-8">
         <h1 className="text-4xl font-bold text-center text-sky-600 py-2">
           Testimonials
         </h1>
         <p className="text-xs font-bold text-sky-400 mt-2 text-center">
           What our happy users say!
         </p>
-
         <Swiper
           modules={[Pagination, Autoplay]}
           pagination={{ clickable: true }}
@@ -76,7 +83,7 @@ function Testimonials() {
         >
           {testimonials.map((t, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-[#0D1117] text-white p-4 sm:p-6 rounded-xl shadow-md min-h-[320px] sm:min-h-[360px] flex flex-col justify-between">
+              <div className={`rounded-xl shadow-md min-h-[320px] sm:min-h-[360px] flex flex-col justify-between ${cardBg} p-5`} style={cardStyle}>
                 <div className="flex justify-between items-start mb-4">
                   <svg
                     stroke="currentColor"
@@ -96,9 +103,9 @@ function Testimonials() {
                     className="w-10 h-10 rounded-full object-cover"
                   />
                 </div>
-                <p className="text-lg mb-6">{t.text}</p>
+                <p className={`text-lg mb-6 ${textClass} line-clamp-3`}>{t.text}</p>
                 <div className="flex justify-between items-center">
-                  <p className="text-sm font-semibold">
+                  <p className={`text-sm font-semibold ${textClass}`}>
                     {t.name}{" "}
                     <span className="text-sky-500 font-normal text-sm">
                       ({t.country})
