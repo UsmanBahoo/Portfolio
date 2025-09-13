@@ -18,7 +18,7 @@ function Project() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, type: 'spring', bounce: 0.2 }}
             viewport={{ once: true }}
-            className={`${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-3 sm:p-4`}
+            className={`${theme === 'dark' ? 'bg-[#020716] text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-3 sm:p-4`}
           >
             <a href="https://foodmern.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src="/assets/Food.png" alt="Food Delivery App Screenshot" className="w-full h-48 rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
@@ -35,7 +35,7 @@ function Project() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, type: 'spring', bounce: 0.2, delay: 0.1 }}
             viewport={{ once: true }}
-            className={`${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-4`}
+            className={`${theme === 'dark' ? 'bg-[#020716] text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-4`}
             style={theme === 'light' ? { backgroundColor: '#fff', color: '#000' } : {}}
           >
             <a href="https://camern.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -53,7 +53,7 @@ function Project() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, type: 'spring', bounce: 0.2, delay: 0.2 }}
             viewport={{ once: true }}
-            className={`${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-4`}
+            className={`${theme === 'dark' ? 'bg-[#020716] text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-4`}
             style={theme === 'light' ? { backgroundColor: '#fff', color: '#000' } : {}}
           >
             <a href="https://www.keunepakistan.com/" target="_blank" rel="noopener noreferrer">
@@ -72,7 +72,7 @@ function Project() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, type: 'spring', bounce: 0.2, delay: 0.3 }}
             viewport={{ once: true }}
-            className={`${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-4`}
+            className={`${theme === 'dark' ? 'bg-[#020716] text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-4`}
             style={theme === 'light' ? { backgroundColor: '#fff', color: '#000' } : {}}
           >
             <a href="https://salondziners.com/" target="_blank" rel="noopener noreferrer">
@@ -90,7 +90,7 @@ function Project() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, type: 'spring', bounce: 0.2, delay: 0.4 }}
             viewport={{ once: true }}
-            className={`${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-4`}
+            className={`${theme === 'dark' ? 'bg-[#020716] text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-4`}
             style={theme === 'light' ? { backgroundColor: '#fff', color: '#000' } : {}}
           >
             <a href="https://focuspc.co.uk/" target="_blank" rel="noopener noreferrer">
@@ -108,7 +108,7 @@ function Project() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, type: 'spring', bounce: 0.2, delay: 0.5 }}
             viewport={{ once: true }}
-            className={`${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-4`}
+            className={`${theme === 'dark' ? 'bg-[#020716] text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-4`}
             style={theme === 'light' ? { backgroundColor: '#fff', color: '#000' } : {}}
           >
             <a href="https://eexor.pk/" target="_blank" rel="noopener noreferrer">
