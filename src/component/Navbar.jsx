@@ -47,7 +47,7 @@ function Navbar() {
               </button>
 
               {/* Navigation Links and Theme Toggle for Large Screens */}
-              <div className="flex items-center">
+              <div className="flex items-center w-full">
                 <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full lg:block lg:w-auto mt-4 lg:mt-0`} id="navbar-default">
                   <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border rounded-lg lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
                     {['home', 'about', 'skill', 'project', 'testimonials', 'contact'].map((section) => (
