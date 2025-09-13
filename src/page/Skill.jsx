@@ -7,11 +7,9 @@ function Skill() {
   const cardBg = theme === 'dark' ? 'bg-[#22223b]' : 'bg-gray-100';
   const cardStyle = theme === 'dark' ? { backgroundColor: '#22223b' } : { backgroundColor: '#f3f4f6' };
   const textClass = theme === 'dark' ? 'text-white' : 'text-black';
-  const sectionBg = theme === 'dark' ? 'bg-[#22223b]' : 'bg-white';
-  const sectionStyle = theme === 'dark' ? { backgroundColor: '#22223b' } : { backgroundColor: '#fff' };
   return (
     <div id="skill" className="overflow-x-hidden">
-      <section className={sectionBg} style={sectionStyle}>
+      <section className={theme === 'dark' ? 'bg-gray-900' : 'bg-white'} style={theme === 'light' ? { backgroundColor: '#fff', color: '#000' } : {}}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-screen-xl">
           <h1 className="text-4xl font-bold text-center text-sky-600 py-10">
             Skill
@@ -114,7 +112,7 @@ function Skill() {
       </section>
 
       {/* Projects Section */}
-      <section className={sectionBg} style={sectionStyle} id='project'>
+      <section className={theme === 'dark' ? 'bg-gray-900' : 'bg-white'} style={theme === 'light' ? { backgroundColor: '#fff', color: '#000' } : {}} id='project'>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative max-w-screen-xl">
           {/* Timeline vertical line */}
           <div className={`absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 z-0 ${theme === 'light' ? 'bg-black' : 'bg-white'}`}></div>
@@ -231,7 +229,7 @@ function Skill() {
               {/* Left side card */}
               {proj.position === 'left' && (
                 <div className="md:w-1/2 p-6 mt-10">
-                  <div className="rounded-lg shadow-lg p-6" style={cardStyle}>
+                  <div className="rounded-lg shadow-lg p-6 bg-[#020716]">
                     <h1 className={`text-2xl font-bold mb-2 ${textClass}`}>{proj.title}</h1>
                     <h2 className={`text-lg font-semibold mb-4 ${textClass}`}>{proj.technologies}</h2>
                     <ul className={`list-disc list-inside space-y-2 text-sm ${textClass}`}>
@@ -260,7 +258,7 @@ function Skill() {
               {/* Right side card */}
               {proj.position === 'right' && (
                 <div className="md:w-1/2 p-6 mt-10">
-                  <div className="rounded-lg shadow-lg p-6" style={cardStyle}>
+                  <div className="rounded-lg shadow-lg p-6 bg-[#020716]">
                     <h1 className={`text-2xl font-bold mb-2 ${textClass}`}>{proj.title}</h1>
                     <h2 className={`text-lg font-semibold mb-4 ${textClass}`}>{proj.technologies}</h2>
                     <ul className={`list-disc list-inside space-y-2 text-sm ${textClass}`}>

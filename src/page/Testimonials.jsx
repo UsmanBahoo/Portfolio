@@ -52,13 +52,10 @@ const testimonials = [
 
 function Testimonials() {
   const { theme } = useTheme();
-  const sectionBg = theme === 'dark' ? 'bg-[#22223b]' : 'bg-white';
-  const sectionStyle = theme === 'dark' ? { backgroundColor: '#22223b' } : { backgroundColor: '#fff' };
   const cardBg = theme === 'dark' ? 'bg-[#0D1117]' : 'bg-gray-100';
-  const cardStyle = theme === 'dark' ? { backgroundColor: '#0D1117' } : { backgroundColor: '#f3f4f6' };
   const textClass = theme === 'dark' ? 'text-white' : 'text-black';
   return (
-    <section className={`${sectionBg} ${textClass} overflow-x-hidden`} style={sectionStyle} id="testimonials">
+    <section className={theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'} id="testimonials">
       <div className="container mx-auto max-w-screen-xl px-2 sm:px-4 md:px-8 py-6 md:py-8">
         <h1 className="text-4xl font-bold text-center text-sky-600 py-2">
           Testimonials
@@ -83,7 +80,7 @@ function Testimonials() {
         >
           {testimonials.map((t, index) => (
             <SwiperSlide key={index}>
-              <div className={`rounded-xl shadow-md min-h-[320px] sm:min-h-[360px] flex flex-col justify-between ${cardBg} p-5`} style={cardStyle}>
+              <div className={`rounded-xl shadow-md min-h-[320px] sm:min-h-[360px] flex flex-col justify-between ${cardBg} p-5`}>
                 <div className="flex justify-between items-start mb-4">
                   <svg
                     stroke="currentColor"

@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 function Contact() {
   const { theme } = useTheme();
   return (
-  <div id="contact" className="overflow-x-hidden">
-      <section className={theme === 'dark' ? 'bg-gray-900' : 'bg-white'} style={theme === 'light' ? { backgroundColor: '#fff', color: '#000' } : {}}>
+    <div id="contact" className="overflow-x-hidden">
+      <section className={theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'}>
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}

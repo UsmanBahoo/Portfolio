@@ -10,7 +10,7 @@ function Home() {
   const [leftVisible, setLeftVisible] = useState(false);
   const [rightVisible, setRightVisible] = useState(false);
   const { theme } = useTheme();
-  const bgClass = theme === 'dark' ? 'bg-gray-900' : 'bg-white';
+  const bgClass = theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black';
   const textClass = theme === 'dark' ? 'text-white' : 'text-black';
 
   useEffect(() => {
@@ -18,7 +18,7 @@ function Home() {
     setTimeout(() => setRightVisible(true), 400);
   }, []);
   return (
-    <div id='home' className={`overflow-x-hidden ${textClass}`}>
+    <div id='home' className="overflow-x-hidden">
       <section className={bgClass}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-screen-xl">
           <div className="flex justify-between items-center md:flex-row flex-col">

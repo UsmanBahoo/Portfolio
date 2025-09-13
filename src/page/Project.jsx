@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 function Project() {
   const { theme } = useTheme();
   return (
-  <section className={theme === 'dark' ? 'bg-gray-900 overflow-x-hidden' : 'bg-white overflow-x-hidden'}>
+  <section className={theme === 'dark' ? 'bg-gray-900 text-white overflow-x-hidden' : 'bg-white text-black overflow-x-hidden'}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-screen-xl">
         <h1 className="text-4xl font-bold text-center text-sky-600 py-10">
           Projects
@@ -19,7 +19,6 @@ function Project() {
             transition={{ duration: 0.7, type: 'spring', bounce: 0.2 }}
             viewport={{ once: true }}
             className={`${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'} shadow-xl rounded-xl p-3 sm:p-4`}
-            style={theme === 'light' ? { backgroundColor: '#fff', color: '#000' } : {}}
           >
             <a href="https://foodmern.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src="/assets/Food.png" alt="Food Delivery App Screenshot" className="w-full h-48 rounded mb-4 cursor-pointer hover:opacity-80 transition-opacity" />
