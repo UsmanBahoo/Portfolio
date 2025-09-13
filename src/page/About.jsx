@@ -5,8 +5,8 @@ import { motion as Motion } from "framer-motion";
 export default function About() {
   const { theme } = useTheme();
   const textClass = theme === 'dark' ? 'text-white' : 'text-black';
-  const flipFrontBg = theme === 'dark' ? 'bg-[#22223b]' : 'bg-white';
-  const flipBackBg = theme === 'dark' ? 'bg-[#22223b]' : 'bg-white';
+  const flipFrontBg = theme === 'dark' ? 'bg-[#020716]' : 'bg-white';
+  const flipBackBg = theme === 'dark' ? 'bg-[#020716]' : 'bg-white';
 
   return (
     <div id="about" className="overflow-x-hidden overflow-y-hidden">

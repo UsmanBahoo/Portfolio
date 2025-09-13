@@ -224,7 +224,7 @@ function Skill() {
               {/* Left side card */}
               {proj.position === 'left' && (
                 <div className="md:w-1/2 p-6 mt-10">
-                  <div className={`rounded-lg shadow-lg p-6 ${theme === 'dark' ? 'bg-[#020716]' : 'bg-white'}`}> 
+                  <div className={`rounded-lg shadow-lg p-6 ${theme === 'dark' ? 'bg-[#020716]' : 'bg-white'}`}>
                     <h1 className={`text-2xl font-bold mb-2 ${textClass}`}>{proj.title}</h1>
                     <h2 className={`text-lg font-semibold mb-4 ${textClass}`}>{proj.technologies}</h2>
                     <ul className={`list-disc list-inside space-y-2 text-sm ${textClass}`}>
