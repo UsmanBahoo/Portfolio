@@ -4,8 +4,7 @@ import { motion as Motion } from "framer-motion";
 
 function Skill() {
   const { theme } = useTheme();
-  const cardBg = theme === 'dark' ? 'bg-[#22223b]' : 'bg-gray-100';
-  const cardStyle = theme === 'dark' ? { backgroundColor: '#22223b' } : { backgroundColor: '#f3f4f6' };
+  // Removed cardBg and cardStyle for no background/border
   const textClass = theme === 'dark' ? 'text-white' : 'text-black';
   return (
     <div id="skill" className="overflow-x-hidden">
@@ -48,8 +47,7 @@ function Skill() {
               
             ].map(([src, title]) => (
               <Motion.div
-                className={`flex flex-col items-center rounded-lg shadow-md ${cardBg}`}
-                style={cardStyle}
+                className="flex flex-col items-center rounded-lg shadow-none"
                 key={title}
                 whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0, y: 30 }}
@@ -61,7 +59,6 @@ function Skill() {
                   src={`/assets/${src}`}
                   alt={title}
                   className="w-[80px] h-[80px] object-contain"
-                  style={cardStyle}
                 />
                 <h1 className={`text-xs text-center mt-2 ${textClass}`}>{title}</h1>
               </Motion.div>
@@ -89,8 +86,7 @@ function Skill() {
               
             ].map(([src, title]) => (
               <Motion.div
-                className={`sm:w-1/4 md:w-1/6 w-1/3 lg:w-1/12 flex flex-col items-center rounded-lg shadow-md ${cardBg}`}
-                style={cardStyle}
+                className="sm:w-1/4 md:w-1/6 w-1/3 lg:w-1/12 flex flex-col items-center rounded-lg shadow-none"
                 key={title}
                 whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0, y: 30 }}
@@ -102,7 +98,6 @@ function Skill() {
                   src={`/assets/${src}`}
                   alt={title}
                   className="w-[80px] h-[80px]"
-                  style={cardStyle}
                 />
                 <h1 className={`text-xs text-center mt-2 ${textClass}`}>{title}</h1>
               </Motion.div>
