@@ -9,7 +9,7 @@ export default function About() {
   const flipBackBg = theme === 'dark' ? 'bg-[#22223b]' : 'bg-white';
 
   return (
-    <div id="about" className="overflow-hidden">
+    <div id="about" className="overflow-x-hidden overflow-y-hidden">
       <section className={theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10 max-w-screen-xl">
           <Motion.h1
