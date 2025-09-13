@@ -29,7 +29,7 @@ function Navbar() {
               <button
                 onClick={toggleMenu}
                 type="button"
-                className={`fixed top-6 right-4 z-50 p-2 w-10 h-10 flex items-center justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-0'}`}
+                className={`top-6 mt-4 right-4 z-50 p-2 w-10 h-10 flex items-center justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-0'}`}
                 aria-label={isMenuOpen ? 'Close main menu' : 'Open main menu'}
               >
                 <span className="sr-only">{isMenuOpen ? 'Close main menu' : 'Open main menu'}</span>
