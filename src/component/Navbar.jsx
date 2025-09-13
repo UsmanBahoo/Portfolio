@@ -49,7 +49,7 @@ function Navbar() {
               {/* Navigation Links and Theme Toggle for Large Screens */}
               <div className="flex items-center w-full lg:w-auto">
                 <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full lg:block lg:w-auto mt-4 lg:mt-0`} id="navbar-default">
-                  <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border rounded-lg lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
+                    <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border w-full lg:w-auto rounded-lg lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 border-gray-200 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-white">
                     {['home', 'about', 'skill', 'project', 'testimonials', 'contact'].map((section) => (
                       <li key={section}>
                         <a
