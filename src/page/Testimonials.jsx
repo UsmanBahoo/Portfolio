@@ -133,4 +133,10 @@ function Testimonials() {
   );
 }
 
+
+// Hide Swiper pagination bullets
+const style = document.createElement('style');
+style.innerHTML = `.swiper-pagination { display: none !important; }`;
+document.head.appendChild(style);
+
 export default Testimonials;
